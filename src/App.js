@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./components/header/Header";
+import Appointments from "./components/sections/appointments/Appointments";
+import Chat from "./components/sections/chat/Chat";
+import Chats from "./components/sections/chat/Chats";
+import Clients from "./components/sections/clients/Clients";
+import Rating from "./components/sections/rating/Rating";
+import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <Header />
+      </div>
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className="content">
+        <Routes>
+          <Route path="/*" element={<Appointments />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/chat" element={<Chats />} />
+          <Route path="/rating" element={<Rating />} />
+        </Routes>
+      </div>
     </div>
   );
 }

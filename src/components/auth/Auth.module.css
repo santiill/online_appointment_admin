@@ -1,0 +1,52 @@
+
+.auth_cont {
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.auth {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .auth_cont {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #04bbce;
+} */
+.form {
+    width:  400px;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.auth_title {
+    margin: 40px auto 40px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Gilroy,sans-serif;
+    line-height: 1.2;
+    letter-spacing: .01em;
+    color: #253246;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .sample_img {
+        display: none;
+    }
+    .regist_title {
+        font-size: 30px;
+        margin: 30px auto 20px;
+    }
+    
+  }
