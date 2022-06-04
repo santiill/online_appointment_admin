@@ -4,11 +4,11 @@ import Header from "./components/header/Header";
 import Appointments from "./components/sections/appointments/Appointments";
 import Chat from "./components/sections/chat/Chat";
 import Chats from "./components/sections/chat/Chats";
-import Clients from "./components/sections/clients/Clients";
+import Client from "./components/sections/clients/Clients";
 import Rating from "./components/sections/rating/Rating";
 import Sidebar from "./components/sidebar/Sidebar";
 
-function App() {
+function Clients() {
   return (
     <div className="App">
       <div className="header">
@@ -20,7 +20,7 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/*" element={<Appointments />} />
-          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients" element={<Client />} />
           <Route path="/chat" element={<Chats />} />
           <Route path="/rating" element={<Rating />} />
         </Routes>
@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default Clients;

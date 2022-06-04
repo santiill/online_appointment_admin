@@ -5,6 +5,7 @@
     background-color: #e2e2e2;
     height: 100vh;
 }
-.sidebar_item, .activeL {background: #bebebe;margin: 10px 0;padding: 10px;text-decoration: none;border-top-right-radius: 26px;border-bottom-right-radius: 26px;color: white;}
+.sidebar_item, .activeL {background: transparent;/* margin-bottom: 20px; */padding: 20px;text-decoration: none;/* border-top-right-radius: 26px;border-bottom-right-radius: 26px; */color: black;}
 
-.sidebar_item:hover,.activeL  {background: #1fc2cb;}
+.sidebar_item:hover  {background: #b0d0da;}
+.activeL  {background: #6D94C4;}

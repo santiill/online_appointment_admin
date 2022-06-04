@@ -29,6 +29,7 @@ const Sidebar = () => {
       >
         Мой рейтинг
       </NavLink>
+      <div></div>
     </div>
   );
 };

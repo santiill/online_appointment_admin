@@ -3,17 +3,33 @@ import s from "./Auth.module.css";
 import "../baseStyles.css";
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
+import { AuthApi, request } from "../../redux/api";
+import { axios } from "axios";
+
+// import {useDispatch} from "react-redux"
 
 const Auth = () => {
+  // const dispatch = useDispatch();
   const navigate = useNavigate();
+  const registerBtn = () => navigate("/registration");
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
     },
     onSubmit: (data) => {
-      navigate("/*");
       console.log("data: ", data);
+      // AuthApi(data);
+      request.login(data).then((res) => {
+        console.log(res);
+        navigate("/*");
+      });
+      // axios
+      //   .post("https://doctor-admin.herokuapp.com/api/auth", data)
+      //   .then((res) => {
+      //     console.log(res);
+      //     navigate("/*");
+      //   });
       //   auth(data, setShow);
     },
   });
@@ -27,7 +43,7 @@ const Auth = () => {
               Логин
             </label>
             <input
-              name="username"
+              name="email"
               onChange={formik.handleChange}
               className="input"
               type="text"
@@ -47,12 +63,13 @@ const Auth = () => {
             />
           </div>
           <button
-            disabled={!(formik.values.username && formik.values.password)}
+            // disabled={!(formik.values.username && formik.values.password)}
             type="submit"
             className="button"
           >
             Войти
           </button>
+          <p onClick={registerBtn}>Зарегистрироваться</p>
         </form>
       </div>
     </div>
