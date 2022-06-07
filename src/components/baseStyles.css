@@ -44,3 +44,14 @@
     background-color: #6d94c4 !important;
     color: #fff;
 }
+
+.container {
+    padding: 20px;
+}
+.cs-message__content {
+    color: white !important;
+    /* background: #6ea9d7 !important; */
+}
+.cs-message--incoming .cs-message__content {
+    background-color: #6197cf !important;
+}

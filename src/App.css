@@ -7,7 +7,7 @@
 }
 .content {
   grid-area: content;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .header {
   grid-area: header;

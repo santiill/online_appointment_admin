@@ -3,7 +3,7 @@ import BaseTable from "../../base/Table";
 
 const Appointments = () => {
   return (
-    <div>
+    <div className="container">
       Appointments
       <br />
       <br />

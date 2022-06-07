@@ -1,10 +1,11 @@
 .header_cont {
-    background: #f8f8f8;
+    background: #6d94c4;
     height: 80px;
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
+    color: azure;
 }
 .header_text {
     font-size: 18px;

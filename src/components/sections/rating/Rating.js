@@ -1,7 +1,7 @@
 import React from "react";
 
 const Rating = () => {
-  return <div>Rating</div>;
+  return <div className="container">Rating</div>;
 };
 
 export default Rating;

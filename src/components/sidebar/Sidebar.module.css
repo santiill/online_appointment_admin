@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     width: 250px;
-    background-color: #e2e2e2;
+    background-color: #f5f5f5;
     height: 100vh;
 }
 .sidebar_item, .activeL {background: transparent;/* margin-bottom: 20px; */padding: 20px;text-decoration: none;/* border-top-right-radius: 26px;border-bottom-right-radius: 26px; */color: black;}
 
-.sidebar_item:hover  {background: #b0d0da;}
-.activeL  {background: #6D94C4;}
+.sidebar_item:hover  {background: #ceddfb;}
+.activeL  {background: #6D94C4; color: white;}

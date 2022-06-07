@@ -5,7 +5,7 @@ import CustomizedTables from "../../base/Table";
 
 const Client = () => {
   return (
-    <div>
+    <div className="container">
       Clients
       <br />
       <br />
