@@ -31,135 +31,55 @@ const Chats = () => {
     >
       <MainContainer responsive>
         <Sidebar position="left" scrollable={false}>
-          <Search placeholder="Search..." />
-          <ConversationList>
-            <Conversation
-              name="Lilly"
-              lastSenderName="Lilly"
-              info="Yes i can do it for you"
-            >
-              <Avatar name="Lilly" status="available" />
-            </Conversation>
-
-            <Conversation
-              name="Joe"
-              lastSenderName="Joe"
-              info="Yes i can do it for you"
-            >
-              <Avatar name="Joe" status="dnd" />
-            </Conversation>
-
-            <Conversation
-              name="Emily"
-              lastSenderName="Emily"
-              info="Yes i can do it for you"
-              unreadCnt={3}
-            >
-              <Avatar name="Emily" status="available" />
-            </Conversation>
-            <Conversation
-              name="Emily"
-              lastSenderName="Emily"
-              info="Yes i can do it for you"
-              unreadCnt={3}
-            >
-              <Avatar name="Emily" status="available" />
-            </Conversation>
-            <Conversation
-              name="Emily"
-              lastSenderName="Emily"
-              info="Yes i can do it for you"
-              unreadCnt={3}
-            >
-              <Avatar name="Emily" status="available" />
-            </Conversation>
-            <Conversation
-              name="Emily"
-              lastSenderName="Emily"
-              info="Yes i can do it for you"
-              unreadCnt={3}
-            >
-              <Avatar name="Emily" status="available" />
-            </Conversation>
-            <Conversation
-              name="Emily"
-              lastSenderName="Emily"
-              info="Yes i can do it for you"
-              unreadCnt={3}
-            >
-              <Avatar name="Emily" status="available" />
-            </Conversation>
-            <Conversation
-              name="Emily"
-              lastSenderName="Emily"
-              info="Yes i can do it for you"
-              unreadCnt={3}
-            >
-              <Avatar name="Emily" status="available" />
-            </Conversation>
-            <Conversation
-              name="Emily"
-              lastSenderName="Emily"
-              info="Yes i can do it for you"
-              unreadCnt={3}
-            >
-              <Avatar name="Emily" status="available" />
-            </Conversation>
-            <Conversation
-              name="Kai"
-              lastSenderName="Kai"
-              info="Yes i can do it for you"
-              unreadDot
-            >
-              <Avatar name="Kai" status="unavailable" />
-            </Conversation>
-
-            <Conversation
-              name="Akane"
-              lastSenderName="Akane"
-              info="Yes i can do it for you"
-            >
-              <Avatar name="Akane" status="eager" />
-            </Conversation>
-
-            <Conversation
-              name="Eliot"
-              lastSenderName="Eliot"
-              info="Yes i can do it for you"
-            >
-              <Avatar name="Eliot" status="away" />
-            </Conversation>
-
-            <Conversation
-              name="Zoe"
-              lastSenderName="Zoe"
-              info="Yes i can do it for you"
-            >
-              <Avatar name="Zoe" status="dnd" />
-            </Conversation>
-
-            <Conversation
-              name="Patrik"
-              lastSenderName="Patrik"
-              info="Yes i can do it for you"
-            >
-              <Avatar name="Patrik" status="invisible" />
-            </Conversation>
-          </ConversationList>
+          {/* <Search placeholder="Search..." /> */}
+          <ConversationList>        
+        <Conversation name="Lilly" lastSenderName="Lilly" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Lilly" /> */}
+        </Conversation>
+        
+        <Conversation name="Joe" lastSenderName="Joe" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Joe" /> */}
+        </Conversation>
+        
+        <Conversation name="Emily" lastSenderName="Emily" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Emily" /> */}
+        </Conversation>
+        
+        <Conversation name="Kai" lastSenderName="Kai" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Kai" /> */}
+        </Conversation>
+                    
+        <Conversation name="Akane" lastSenderName="Akane" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Akane" /> */}
+        </Conversation>
+                            
+        <Conversation name="Eliot" lastSenderName="Eliot" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Eliot" /> */}
+        </Conversation>
+                                            
+        <Conversation name="Zoe" lastSenderName="Zoe" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Zoe" /> */}
+        </Conversation>
+                                                        
+        <Conversation name="Patrik" lastSenderName="Patrik" info="Yes i can do it for you">
+          {/* <Avatar src={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F427%2Foriginal%2Fman-avatar-character-isolated-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fman-avatar&tbnid=RrJy2x1mQ0drSM&vet=12ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ..i&docid=_oz7H4D9-W19AM&w=7974&h=7974&q=avatar%20icon&ved=2ahUKEwjMrq782Jr4AhXml4sKHePcBsYQMygCegUIARDCAQ"} name="Patrik" /> */}
+        </Conversation>
+        
+      </ConversationList>
         </Sidebar>
 
         <ChatContainer>
           <ConversationHeader>
             <ConversationHeader.Back />
-            <Avatar name="Zoe" />
+           {/*  <Avatar name="Zoe" /> */}
             <ConversationHeader.Content
               userName="Zoe"
               info="Active 10 mins ago"
             />
             <ConversationHeader.Actions>
-              <VoiceCallButton />
+              {/* <VoiceCallButton />
               <VideoCallButton />
-              <EllipsisButton orientation="vertical" />
+              <EllipsisButton orientation="vertical" /> */}
             </ConversationHeader.Actions>
           </ConversationHeader>
           <MessageList
@@ -176,7 +96,7 @@ const Chats = () => {
                 position: "single",
               }}
             >
-              <Avatar name="Zoe" />
+              {/* <Avatar name="Zoe" />  */}
             </Message>
             <Message
               model={{
@@ -186,7 +106,7 @@ const Chats = () => {
                 direction: "outgoing",
                 position: "single",
               }}
-              avatarSpacer
+              /* avatarSpacer */
             />
             <Message
               model={{
@@ -196,7 +116,7 @@ const Chats = () => {
                 direction: "incoming",
                 position: "first",
               }}
-              avatarSpacer
+              /* avatarSpacer */
             />
             <Message
               model={{
@@ -206,7 +126,7 @@ const Chats = () => {
                 direction: "incoming",
                 position: "normal",
               }}
-              avatarSpacer
+              /* avatarSpacer */
             />
             <Message
               model={{
@@ -216,7 +136,7 @@ const Chats = () => {
                 direction: "incoming",
                 position: "normal",
               }}
-              avatarSpacer
+              /* avatarSpacer */
             />
             <Message
               model={{
@@ -227,7 +147,7 @@ const Chats = () => {
                 position: "last",
               }}
             >
-              <Avatar name="Zoe" />
+              {/* <Avatar  name="Zoe" /> */}
             </Message>
             <Message
               model={{
@@ -274,7 +194,7 @@ const Chats = () => {
                 direction: "incoming",
                 position: "first",
               }}
-              avatarSpacer
+              /* avatarSpacer */
             />
             <Message
               model={{
@@ -285,7 +205,7 @@ const Chats = () => {
                 position: "last",
               }}
             >
-              <Avatar name="Zoe" />
+            {/*   <Avatar name="Zoe" /> */}
             </Message>
           </MessageList>
           <MessageInput
