@@ -25,7 +25,7 @@ const Chats = () => {
   return (
     <div
       style={{
-        height: "600px",
+        height: "100%",
         position: "relative",
       }}
     >

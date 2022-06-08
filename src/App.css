@@ -1,12 +1,13 @@
 .App {
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 60px 1fr;
   grid-template-areas: "header header"
                       "sidebar content";
 }
 .content {
   grid-area: content;
+  height: 86vh;
   /* padding: 20px; */
 }
 .header {
@@ -18,6 +19,6 @@
 .sidebar {
   grid-area: sidebar;
   position: fixed;
-  top: 80px;
+  top: 60px;
 }
 
