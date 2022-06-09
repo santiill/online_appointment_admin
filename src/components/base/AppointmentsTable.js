@@ -8,6 +8,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import AppointModal from "./AppointModal";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -29,21 +30,24 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, calories, fat, time, protein) {
+  return { name, calories, fat, time, protein };
 }
 
 const rows = [
-  createData("Акмат Акматов", 157, "26.09.2021", 24, 4.0),
-  createData("Аяна Бектемирова",90,"01.08.2019", 9.0, 37, 4.3),
-  createData("Клара Исанова", 262, "12.01.2022", 24, 6.0),
-  createData("Канат Муратов", 305, "23.05.2022", 67, 4.3),
-  createData("Руслан Кантемиров", 356, "16.04.2022", 49, 3.9),
+  createData("Руслан Алиев", "0559057829", "06.06.2022", "12:00"),
+    createData("Алтынай Салтанатова","0998645325","05.06.2022", "15:00"),
+    createData("Иван Иванов", "0995213400","05.06.2022", "16:00"),
 ];
 
-export default function BaseTable() {
+export default function AppointmentsTable() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
+    <>
     <TableContainer component={Paper}>
+
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -51,13 +55,14 @@ export default function BaseTable() {
             <StyledTableCell>ФИО</StyledTableCell>
             <StyledTableCell /* align="right" */>Номер</StyledTableCell>
             <StyledTableCell /* align="right" */>Дата</StyledTableCell>
+            <StyledTableCell /* align="right" */>Время</StyledTableCell>
             {/* <StyledTableCell align="right">Carbs&nbsp;(g)</StyledTableCell>
             <StyledTableCell align="right">Protein&nbsp;(g)</StyledTableCell> */}
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row, index) => (
-            <StyledTableRow key={row.name}>
+            <StyledTableRow onClick={handleOpen} key={row.name}>
               <StyledTableCell component="th" scope="row">
                 {index+1}
               </StyledTableCell>
@@ -66,8 +71,11 @@ export default function BaseTable() {
               </StyledTableCell>
               <StyledTableCell /* align="right" */>
                 {row.calories}
+              </StyledTableCell><StyledTableCell /* align="right" */>{row.fat}</StyledTableCell>
+              <StyledTableCell /* align="right" */>
+                {row.time}
               </StyledTableCell>
-              <StyledTableCell /* align="right" */>{row.fat}</StyledTableCell>
+              
               {/* <StyledTableCell align="right">{row.carbs}</StyledTableCell>
               <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
             </StyledTableRow>
@@ -75,5 +83,8 @@ export default function BaseTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    {open && <AppointModal handleClose={handleClose} open={open}/> }
+    </>
+    
   );
 }

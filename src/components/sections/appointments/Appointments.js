@@ -1,13 +1,20 @@
 import React from "react";
-import BaseTable from "../../base/Table";
+import AppointmentsTable from "../../base/AppointmentsTable";
+import BaseTable from "../../base/AppointmentsTable";
 
 const Appointments = () => {
   return (
     <div className="container">
-      Appointments
+      <div className="flex">
+        <h3>Ближайшие записи</h3>
+        <div className="flex"><input className="search_input"/>
+      <button className="search_button">Search</button></div>
+      
+      </div>
+      
       <br />
       <br />
-      <BaseTable />
+      <AppointmentsTable/>
     </div>
   );
 };

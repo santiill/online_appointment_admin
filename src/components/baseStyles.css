@@ -1,7 +1,9 @@
 * {
     margin: 0;
+    font-family: 'Roboto', sans-serif;;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
 
 .input {
     width: 100%;
@@ -46,7 +48,7 @@
 }
 
 .container {
-    padding: 20px;
+    padding: 30px;
 }
 .cs-message__content {
     color: white !important;
@@ -54,4 +56,74 @@
 }
 .cs-message--incoming .cs-message__content {
     background-color: #6197cf !important;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* font-weight: 500; */
+    align-items: center;
+}
+.search_button {
+    position: absolute;
+    right: 2px;
+    height: 90%;
+    width: 60px;
+    outline: none;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+.search_input {
+    width: 400px;
+    height: 20px;
+    padding: 3px 10px;
+    outline: none;
+    
+}
+.input {
+    width: 100%;
+    font-size: 16px;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px;
+    
+}
+.star {
+    color: gold;
+}
+.modal_img {
+    width: 120px;
+    text-align: center;
+    border-radius: 66px;
+}
+
+.base_button {
+    background: #4785d2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+}
+.css-1wnsr1i {
+    border: none !important;
+    border-radius: 4px;
+    outline: none !important;
+}
+.img_text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.table_img {
+    width: 30px;
+    height: 28px;
+    border-radius: 50px;
 }

@@ -4,8 +4,10 @@ import Header from "./components/header/Header";
 import Appointments from "./components/sections/appointments/Appointments";
 import Chat from "./components/sections/chat/Chat";
 import Chats from "./components/sections/chat/Chats";
+import ClientDetail from "./components/sections/clients/ClientDetail";
 import Client from "./components/sections/clients/Clients";
-import Rating from "./components/sections/rating/Rating";
+import Main from "./components/sections/main/Main";
+import Rating from "./components/sections/settings/Settings";
 import Sidebar from "./components/sidebar/Sidebar";
 
 function Clients() {
@@ -19,8 +21,10 @@ function Clients() {
       </div>
       <div className="content">
         <Routes>
-          <Route path="/*" element={<Appointments />} />
+          <Route path="/*" element={<Main />} />
+          <Route path="/appointment" element={<Appointments />} />
           <Route path="/clients" element={<Client />} />
+          <Route path="/clientDetail" element={<ClientDetail />} />
           <Route path="/chat" element={<Chats />} />
           <Route path="/rating" element={<Rating />} />
         </Routes>

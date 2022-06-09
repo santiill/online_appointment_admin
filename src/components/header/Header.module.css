@@ -8,5 +8,10 @@
     color: azure;
 }
 .header_text {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.header_image {
+    width: 50px;
+    border-radius: 50px;
 }

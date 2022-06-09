@@ -7,7 +7,13 @@ const Sidebar = () => {
     <div className={s.sidebar_container}>
       <NavLink
         className={({ isActive }) => (isActive ? s.activeL : s.sidebar_item)}
-        to="*"
+        to="/*"
+      >
+        Главная
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? s.activeL : s.sidebar_item)}
+        to="/appointment"
       >
         Ближайшие записи
       </NavLink>
@@ -28,6 +34,13 @@ const Sidebar = () => {
         to="/rating"
       >
         Мой рейтинг
+      </NavLink>
+      <hr style={{marginLeft: 20, marginRight: 20}}/> 
+      <NavLink
+        className={({ isActive }) => (isActive ? s.activeL : s.sidebar_item)}
+        to="/logout"
+      >
+        Выход
       </NavLink>
       <div></div>
     </div>
